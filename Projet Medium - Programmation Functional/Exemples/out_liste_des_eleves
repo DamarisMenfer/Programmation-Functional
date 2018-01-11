@@ -1,0 +1,33 @@
+digraph finite_state_machine {
+rankdir=LR;
+size="8,5"
+node [shape = circle];
+LR_groupeC -> LR_projet1 [ label = "SS(0)" ]; 
+LR_groupeC -> LR_projet6 [ label = "SS(1)" ]; 
+LR_groupeA -> LR_projet1 [ label = "SS(1)" ]; 
+LR_groupeA -> LR_projet5 [ label = "SS(0)" ]; 
+LR_groupeA -> LR_projet2 [ label = "SS(0)" ]; 
+LR_projet3 -> LR_t [ label = "SS(1)" ]; 
+LR_groupeE -> LR_projet6 [ label = "SS(0)" ]; 
+LR_groupeE -> LR_projet3 [ label = "SS(1)" ]; 
+LR_groupeE -> LR_projet7 [ label = "SS(0)" ]; 
+LR_projet5 -> LR_t [ label = "SS(1)" ]; 
+LR_projet4 -> LR_t [ label = "SS(1)" ]; 
+LR_projet7 -> LR_t [ label = "SS(1)" ]; 
+LR_s -> LR_groupeG [ label = "SS(1)" ]; 
+LR_s -> LR_groupeE [ label = "SS(1)" ]; 
+LR_s -> LR_groupeA [ label = "SS(1)" ]; 
+LR_s -> LR_groupeB [ label = "SS(1)" ]; 
+LR_s -> LR_groupeC [ label = "SS(1)" ]; 
+LR_s -> LR_groupeD [ label = "SS(1)" ]; 
+LR_s -> LR_groupeF [ label = "SS(1)" ]; 
+LR_projet6 -> LR_t [ label = "SS(1)" ]; 
+LR_groupeB -> LR_projet3 [ label = "SS(0)" ]; 
+LR_groupeB -> LR_projet7 [ label = "SS(1)" ]; 
+LR_projet2 -> LR_t [ label = "SS(1)" ]; 
+LR_projet1 -> LR_t [ label = "SS(1)" ]; 
+LR_groupeD -> LR_projet5 [ label = "SS(1)" ]; 
+LR_groupeG -> LR_projet1 [ label = "SS(0)" ]; 
+LR_groupeG -> LR_projet4 [ label = "SS(1)" ]; 
+LR_groupeF -> LR_projet2 [ label = "SS(1)" ]; 
+}

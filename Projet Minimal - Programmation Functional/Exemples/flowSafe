@@ -1,0 +1,15 @@
+digraph finite_state_machine {
+rankdir=LR;
+size="8,5"
+node [shape = circle];
+LR_4 -> LR_5 [ label = "SS(4)" ]; 
+LR_4 -> LR_3 [ label = "SS(7)" ]; 
+LR_3 -> LR_5 [ label = "SS(19)" ]; 
+LR_3 -> LR_2 [ label = "SS(0)" ]; 
+LR_2 -> LR_4 [ label = "SS(11)" ]; 
+LR_2 -> LR_1 [ label = "SS(0)" ]; 
+LR_1 -> LR_2 [ label = "SS(0)" ]; 
+LR_1 -> LR_3 [ label = "SS(12)" ]; 
+LR_0 -> LR_1 [ label = "SS(12)" ]; 
+LR_0 -> LR_2 [ label = "SS(11)" ]; 
+}

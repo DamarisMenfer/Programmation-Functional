@@ -1,0 +1,40 @@
+### Starting build.
+# Target: ftest.ml.depends, tags: { debug, extension:ml, file:ftest.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules ftest.ml > ftest.ml.depends # cached
+# Target: fordfulkerson.mli.depends, tags: { debug, extension:mli, file:fordfulkerson.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules fordfulkerson.mli > fordfulkerson.mli.depends # cached
+# Target: graph.mli.depends, tags: { debug, extension:mli, file:graph.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules graph.mli > graph.mli.depends # cached
+# Target: graph.cmi, tags: { byte, compile, debug, extension:mli, file:graph.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o graph.cmi graph.mli # cached
+# Target: fordfulkerson.cmi, tags: { byte, compile, debug, extension:mli, file:fordfulkerson.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o fordfulkerson.cmi fordfulkerson.mli # cached
+# Target: gfile.mli.depends, tags: { debug, extension:mli, file:gfile.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules gfile.mli > gfile.mli.depends # cached
+# Target: gfile.cmi, tags: { byte, compile, debug, extension:mli, file:gfile.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o gfile.cmi gfile.mli # cached
+# Target: transformation.mli.depends, tags: { debug, extension:mli, file:transformation.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules transformation.mli > transformation.mli.depends # cached
+# Target: transformation.cmi, tags: { byte, compile, debug, extension:mli, file:transformation.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o transformation.cmi transformation.mli # cached
+# Target: ftest.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:ftest.cmo, file:ftest.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o ftest.cmo ftest.ml # cached
+# Target: fordfulkerson.ml.depends, tags: { debug, extension:ml, file:fordfulkerson.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules fordfulkerson.ml > fordfulkerson.ml.depends # cached
+# Target: fordfulkerson.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:fordfulkerson.cmo, file:fordfulkerson.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o fordfulkerson.cmo fordfulkerson.ml # cached
+# Target: gfile.ml.depends, tags: { debug, extension:ml, file:gfile.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules gfile.ml > gfile.ml.depends # cached
+# Target: gfile.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:gfile.cmo, file:gfile.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o gfile.cmo gfile.ml # cached
+# Target: graph.ml.depends, tags: { debug, extension:ml, file:graph.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules graph.ml > graph.ml.depends # cached
+# Target: graph.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:graph.cmo, file:graph.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o graph.cmo graph.ml # cached
+# Target: transformation.ml.depends, tags: { debug, extension:ml, file:transformation.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules transformation.ml > transformation.ml.depends # cached
+# Target: transformation.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:transformation.cmo, file:transformation.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -g -o transformation.cmo transformation.ml # cached
+# Target: ftest.byte, tags: { byte, debug, dont_link_with, extension:byte, file:ftest.byte, link, ocaml, program, quiet, traverse }
+/usr/bin/ocamlc -g graph.cmo fordfulkerson.cmo gfile.cmo transformation.cmo ftest.cmo -o ftest.byte # cached
+# Compilation successful.
